@@ -1,4 +1,60 @@
+body {
+    background: #222dc3;
+    background: linear-gradient(0deg, rgba(34, 45, 195, 1) 0%, rgba(45, 253, 232, 1) 100%);
+}
+
 .game-card {
     height: 100vh;
     font-family: 'Open Sans', monospace;
+}
+
+.card {
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: #002E15;
+}
+
+.card-body {
+    color: #002E15;
+    background-color: #C5EAD7;
+}
+
+.card-header {
+    color: #002E15;
+    background-color: #42986A;
+}
+
+.card-footer {
+    background-color: #42986A;
+}
+
+#btnRetry {
+    color: #002E15;
+}
+
+#btnLess {
+    background-color: #222DC3;
+}
+
+#btnLess:hover {
+    background-color: #deeee6;
+    color: #002E15;
+}
+
+#btnEqual {
+    background-color: #42986A;
+}
+
+#btnEqual:hover {
+    background-color: #deeee6;
+    color: #002E15;
+}
+
+#btnOver {
+    background-color: #002E15;
+}
+
+#btnOver:hover {
+    background-color: #deeee6;
+    color: #002E15;
 }

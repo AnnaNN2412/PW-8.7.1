@@ -1,6 +1,21 @@
 let minValue = parseInt(prompt('Минимальное знание числа для игры', '0'));
 let maxValue = parseInt(prompt('Максимальное знание числа для игры', '100'));
+
+minValue = NaN;
+minValue = minValue || 0;
+
+maxValue = NaN;
+maxValue = maxValue || 100;
+
+minValue = minValue > -999 ? minValue = -999 : minValue = minValue;
+
+maxValue = maxValue < 999 ? maxValue = 999 : maxValue = maxValue;
+
+
 alert(`Загадайте любое целое число от ${minValue} до ${maxValue}, а я его угадаю`);
+console.log(minValue);
+console.log(maxValue);
+
 let answerNumber = Math.floor((minValue + maxValue) / 2);
 let orderNumber = 1;
 let gameRun = true;
